@@ -1,11 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import LogoTasksNowIcon from '../../assets/logo.svg';
+import InputAccount from './components/InputAccount';
+import { AccountTitle, Container } from './style';
 
-export default function Login() {
+const Login = () => {
   return (
-    <View style={styles.container}>
+    <Container>
       <LogoTasksNowIcon />
-    </View>
+      <AccountTitle>Acesse sua conta</AccountTitle>
+      <InputAccount />
+    </Container>
   );
 }
+
+export default Login;
