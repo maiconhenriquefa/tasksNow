@@ -1,7 +1,7 @@
 export default {
   colors: {
     primary100: '#E7A600',
-    primary200: '#CB9900',
+    primary200: '#E7A600',
     primary300: '#E7A600',
     primary400: '#CB9900',
 

@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import theme from "../../theme/colors";
 
 export const Container = styled(LinearGradient).attrs({
-  colors:[theme.colors.primary200, theme.colors.primary300],
+  colors:[theme.colors.primary100, theme.colors.primary200],
   start:{ x: 0.0, y: 0.5 },
   end:{ x: 0.5, y: 1.0 }
 })`
@@ -15,25 +15,29 @@ export const Container = styled(LinearGradient).attrs({
 `
 
 export const WrapperInput = styled.View`
-  margin-top: 60px;
+  margin-top: 120px;
 `
 
 export const WrapperLogin = styled.View`
   margin: 16px 0;
 `
 export const WrapperFooter = styled.View`
-  margin-top: 40px;
-  margin-bottom: 16px;
+  margin-top: 80px;
+  margin-bottom: 12px;
 `
 
+export const WrapperPress = styled.TouchableOpacity``;
+
 export const ForgotText = styled.Text`
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 400;
   color: ${theme.colors.neutral50};
 `
 
 export const RegistryText = styled.Text`
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: ${theme.colors.neutral50};
 `

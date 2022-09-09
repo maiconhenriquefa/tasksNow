@@ -3,7 +3,7 @@ import React from 'react';
 
 import Button from '../../components/Button';
 import AccountInput from './components/AccountInput';
-import { Container, ForgotText, RegistryText, WrapperFooter, WrapperInput, WrapperLogin } from './styles';
+import { Container, ForgotText, RegistryText, WrapperFooter, WrapperForgot, WrapperInput, WrapperLogin, WrapperPress } from './styles';
 
 import LogoTasksNowIcon from '../../assets/logo.svg';
 import PasswordIcon from './assets/password.svg';
@@ -20,14 +20,21 @@ const Login = () => {
       </WrapperInput>
 
       <WrapperLogin>
-        <Button text='Entrar' color='white' width='100%' />
+        <Button text='Entrar' background='FDFDFD' width='100%' />
       </WrapperLogin>
-      <ForgotText>Esqueci minha senha</ForgotText>
+      <WrapperPress>
+        <ForgotText>
+          Esqueci minha senha
+        </ForgotText>
+      </WrapperPress>
 
       <WrapperFooter>
-        <Button fontSize={16} text='Conta Google' color='white' width='60%' icon={<GoogleIcon />} />
+        <Button fontSize={14} text='Conta Google' background='#FDFDFD' width='50%' icon={<GoogleIcon />} />
       </WrapperFooter>
-      <RegistryText>Cadastre-se</RegistryText>
+      <WrapperPress>
+        <RegistryText>Cadastre-se</RegistryText>
+      </WrapperPress>
+
     </Container >
   );
 }
