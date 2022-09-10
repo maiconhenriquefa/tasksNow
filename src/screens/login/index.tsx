@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-import Button from '../../components/Button';
-import AccountInput from './components/AccountInput';
-import { Container, ForgotText, RegistryText, WrapperFooter, WrapperForgot, WrapperInput, WrapperLogin, WrapperPress } from './styles';
+import Button from '@components/Button';
+import AccountInput from '@screens/login/components/AccountInput';
+import { Container, ForgotText, RegistryText, WrapperFooter, WrapperInput, WrapperLogin, WrapperPress } from './styles';
 
-import LogoTasksNowIcon from '../../assets/logo.svg';
-import PasswordIcon from './assets/password.svg';
-import GoogleIcon from './assets/google.svg';
-import EmailIcon from './assets/email.svg';
+import LogoTasksNowIcon from '@assets/logo.svg';
+import PasswordIcon from '@screens/login/password.svg';
+import GoogleIcon from '@screens/login/google.svg';
+import EmailIcon from '@screens/login/assets/email.svg';
 
 const Login = () => {
   return (
